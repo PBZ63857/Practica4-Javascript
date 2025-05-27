@@ -37,4 +37,4 @@ Este proyecto tiene como objetivo educar al usuario sobre la evolución de las r
 ##  Autora
 
 Clara Fernández Castro  
-Proyecto Intermodular — 1º DAW virtual
+Práctica 4, javascript. Lenguajes de Marcas — 1º DAW virtual
