@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Safe Net - Seguridad</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><span class="titulo">Safe Net</span> 🌐🔐</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia de las Redes Sociales</a></li>
+                <li><a href="ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a href="Vulnerabilidades.html">Vulnerabilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Vulnerabilidades y Riesgos en Redes Sociales</h2>
+
+            <h3>Tipos de vulnerabilidades más comunes</h3>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Phishing</h4>
+                <p class="detalle">Mensajes o enlaces que simulan ser legítimos para robar tus credenciales de acceso a una red social.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Reutilización de contraseñas</h4>
+                <p class="detalle">Usar la misma contraseña en varios servicios permite que si una es filtrada, todas queden expuestas.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Exposición pública de datos</h4>
+                <p class="detalle">Publicar información sensible sin restricciones de privacidad puede facilitar el acoso o robo de identidad.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Apps maliciosas</h4>
+                <p class="detalle">Aplicaciones externas que acceden a tu cuenta para robar información o publicar sin tu permiso.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Deepfakes y suplantación</h4>
+                <p class="detalle">Videos o imágenes manipuladas para difundir desinformación o suplantar tu identidad.</p>
+            </div>
+
+            <h3>Mini Quiz: ¿Qué has aprendido?</h3>
+
+            <div id="quiz-container">
+                <div class="pregunta" data-respuesta="0" style="display: block;">
+                    <p>1. ¿Cuál es una amenaza común en redes sociales?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Phishing</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Red 5G</button>
+                </div>
+
+                <div class="pregunta" data-respuesta="0">
+                    <p>2. ¿Qué debes evitar para proteger tu cuenta?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Compartir tu contraseña</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Activar 2FA</button>
+                </div>
+
+                <div class="pregunta" data-respuesta="1">
+                    <p>3. ¿Qué medida aumenta tu seguridad en redes?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Hacer públicos todos tus datos</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Revisar la configuración de privacidad</button>
+                </div>
+
+                <div class="pregunta" data-respuesta="1">
+                    <p>4. ¿Qué ataque usa videos falsos para engañar?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Phishing</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Deepfake</button>
+                </div>
+            </div>
+
+            <p id="resultado-quiz"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Safe Net</p>
+    </footer>
+</body>
+</html>
